@@ -3,19 +3,19 @@
 // license that can be found in the LICENSE file.
 
 /*
-	Package netchan implements type-safe networked channels:
-	it allows the two ends of a channel to appear on different
-	computers connected by a network.  It does this by transporting
-	data sent to a channel on one machine so it can be recovered
-	by a receive of a channel of the same type on the other.
+Package netchan implements type-safe networked channels:
+it allows the two ends of a channel to appear on different
+computers connected by a network.  It does this by transporting
+data sent to a channel on one machine so it can be recovered
+by a receive of a channel of the same type on the other.
 
-	An exporter publishes a set of channels by name.  An importer
-	connects to the exporting machine and imports the channels
-	by name. After importing the channels, the two machines can
-	use the channels in the usual way.
+An exporter publishes a set of channels by name.  An importer
+connects to the exporting machine and imports the channels
+by name. After importing the channels, the two machines can
+use the channels in the usual way.
 
-	Networked channels are not synchronized; they always behave
-	as if they are buffered channels of at least one element.
+Networked channels are not synchronized; they always behave
+as if they are buffered channels of at least one element.
 */
 package netchan // import "golang.org/x/exp/old/netchan"
 
@@ -366,6 +366,7 @@ func checkChan(chT interface{}, dir Dir) (reflect.Value, error) {
 // channel to be exported is provided in the call and may be of arbitrary
 // channel type.
 // Despite the literal signature, the effective signature is
+//
 //	Export(name string, chT chan T, dir Dir)
 func (exp *Exporter) Export(name string, chT interface{}, dir Dir) error {
 	ch, err := checkChan(chT, dir)

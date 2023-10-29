@@ -21,12 +21,12 @@ Usage Example:
 
 ## Documentation
 - [v1.0 Plan](wiki/v1-plan.md)
-- [Usage Examples](#)
-- [API References](#)
-- [Secure by default](#)
+- Usage Examples
+- API References
+- Secure by default
 
 ## Community and Support
 Should you have inquiries or suggestions, feel free to open an [issue](https://github.com/matveynator/netchan/issues) in our GitHub repository.
 
 ## License
-`netchan` is distributed under the MIT License. For detailed information, please refer to the [LICENSE](https://github.com/matveynator/netchan/blob/master/LICENSE) file.
+`netchan` is distributed under the BSD-style License. For detailed information, please refer to the [LICENSE](https://github.com/matveynator/netchan/blob/master/LICENSE) file.

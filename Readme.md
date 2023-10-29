@@ -8,6 +8,8 @@
 - **Secure by default**: Emphasizing security, `netchan` employs cutting-edge encryption techniques, alongside reliable authentication and authorization practices, ensuring the integrity and security of your network communications.
 - **Scalability**: Crafted with distributed systems in mind, `netchan` excels in environments demanding high throughput and scalability.
 - **High Performance**: Performance is paramount; hence, `netchan` is meticulously optimized to ensure low overhead and swift data transmissions.
+- **Network CSP compliance**: Full comminicating sequential processes compliance but on the wide area network level.
+
 
 ## Getting Started
 To embark on your journey with `netchan`, install the library using `go get`:

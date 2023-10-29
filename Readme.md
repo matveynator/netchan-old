@@ -1,7 +1,7 @@
 # Welcome to the netchan Wiki!
 
-<p align="left">
-    <img property="og:image" src="https://repository-images.githubusercontent.com/710838463/86ad7361-2608-4a70-9197-e66883eb9914" width="30%">
+<p align="right">
+    <img align="right" property="og:image" src="https://repository-images.githubusercontent.com/710838463/86ad7361-2608-4a70-9197-e66883eb9914" width="30%">
 </p>
 
 

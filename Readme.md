@@ -20,10 +20,10 @@ Usage Example:
 ```
 
 ## Documentation
-- [Introduction](#)
+- [v1.0 Plan](wiki/v1-plan.md)
 - [Usage Examples](#)
 - [API References](#)
-- [Security Best Practices](#)
+- [Secure by default](#)
 
 ## Community and Support
 Should you have inquiries or suggestions, feel free to open an [issue](https://github.com/matveynator/netchan/issues) in our GitHub repository.

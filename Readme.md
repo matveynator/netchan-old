@@ -5,10 +5,10 @@
 
 ## Key Features
 - **Ease of Use**: The library’s interface is intuitively designed, mirroring the standard channel operations in Go, ensuring a seamless integration for Go developers.
-- **Secure by default**: Emphasizing security, `netchan` employs cutting-edge encryption techniques, alongside reliable authentication and authorization practices, ensuring the integrity and security of your network communications.
+- **Secure by default**: Emphasizing security, `netchan` employs cutting-edge encryption techniques, alongside reliable authentication and authorization practices, ensuring the integrity and default security of your network communications.
 - **Scalability**: Crafted with distributed systems in mind, `netchan` excels in environments demanding high throughput and scalability.
 - **High Performance**: Performance is paramount; hence, `netchan` is meticulously optimized to ensure low overhead and swift data transmissions.
-- **Network CSP compliance**: Full comminicating sequential processes compliance but on the wide area network level.
+- **Network Adherence to CSP Principles**: Complete alignment with the Communicating Sequential Processes (CSP) model as articulated by Tony Hoare, extended to function at the network layer.
 
 
 ## Getting Started

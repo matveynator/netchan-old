@@ -14,7 +14,7 @@
 - **Scalability**: Crafted with distributed systems in mind, `netchan` excels in environments demanding high throughput and scalability.
 - **High Performance**: Performance is paramount; hence, `netchan` is meticulously optimized to ensure low overhead and swift data transmissions.
 - **Network Adherence to CSP Principles**: Complete alignment with the Communicating Sequential Processes (CSP) model as articulated by Tony Hoare, extended to function at the network layer.
-- **Principles of Pure Go Programming**: A seamless adherence to the Go proverbs, harmonizing the coding practices with the most esteemed and recognized conventions of unadulterated Go programming principles.
+- **Principles of Pure Go Programming**: A seamless adherence to the [Go proverbs](https://go-proverbs.github.io), harmonizing the coding practices with the most esteemed and recognized conventions of unadulterated Go programming principles.
 
 
 ## Getting Started

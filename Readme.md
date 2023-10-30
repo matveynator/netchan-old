@@ -38,3 +38,14 @@ Should you have inquiries or suggestions, feel free to open an [issue](https://g
 
 ## License
 `netchan` is distributed under the BSD-style License. For detailed information, please refer to the [LICENSE](https://github.com/matveynator/netchan/blob/master/LICENSE) file.
+
+## Recovering original netchan 2013 code by Rob Pike:
+```
+git clone https://go.googlesource.com/exp
+cd exp
+git reset --hard a05e19747a0323e4140d9d054102e7d7f9c0812a
+cd old/netchan
+```
+
+
+

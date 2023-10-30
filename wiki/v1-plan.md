@@ -15,9 +15,8 @@ This document delineates the critical tasks and objectives for the first release
 - [ ] **1.2.2. Develop Secure Key Exchange Mechanism**: Establish a secure process for key exchange to authenticate parties involved in the communication.
 
 ## 2. Documentation
-- [ ] **2.1. Create Basic API Documentation**: Provide elementary documentation for the API, covering all essential functions and methods.
-- [ ] **2.2. Offer Simple Usage Examples**: Supply basic examples demonstrating the library’s usage in common scenarios.
-- [ ] **2.3. Compile Best Practices**: List best practices to guide developers towards secure and efficient use of `netchan`.
+- [ ] **2.1. Offer Simple Usage Examples**: Supply basic examples demonstrating the library’s usage in common scenarios.
+- [ ] **2.2. Compile Best Practices**: List best practices to guide developers towards secure and efficient use of `netchan`.
 
 ## 3. Testing
 - [ ] **3.1. Conduct Basic Unit Testing**: Develop a suite of unit tests to validate the library’s core functionalities.

@@ -16,7 +16,6 @@ This document delineates the critical tasks and objectives for the first release
 
 ## 2. Documentation
 - [ ] **2.1. Offer Simple Usage Examples**: Supply basic examples demonstrating the library’s usage in common scenarios.
-- [ ] **2.2. Compile Best Practices**: List best practices to guide developers towards secure and efficient use of `netchan`.
 
 ## 3. Testing
 - [ ] **3.1. Conduct Basic Unit Testing**: Develop a suite of unit tests to validate the library’s core functionalities.
@@ -24,8 +23,3 @@ This document delineates the critical tasks and objectives for the first release
 
 ## 4. Community Engagement
 - [ ] **4.1. Establish Basic Contribution Guidelines**: Create simple and clear guidelines for developers interested in contributing to `netchan`.
-- [ ] **4.2. Set Up Community Communication Channels**: Initiate channels for community discussions, feedback, and contributions.
-
-## 5. Maintenance
-- [ ] **5.1. Set a Routine for Library Updates**: Ensure regular updates to the library, keeping it compatible with the latest Go versions.
-- [ ] **5.2. Provide Basic Support**: Offer support to developers, addressing their queries and issues in a timely manner.

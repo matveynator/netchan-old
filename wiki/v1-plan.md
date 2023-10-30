@@ -5,12 +5,12 @@
 ## Overview
 This document delineates the critical tasks and objectives for the first release of the `netchan` library, aiming to provide a secure, efficient, and user-friendly experience for Go developers working with network channels.
 
-## 1. Core Development
+## 1. Core Development:
 ### 1.1. Network Channel Abstractions
 - [ ] **1.1.1. Design Basic Secure Network Channel Abstractions**: Develop the essential abstractions that closely resemble Go’s native channels for network communication, ensuring inherent security.
 - [ ] **1.1.2. Ensure Thread Safety without Mutex Locks**: Guarantee thread safety, leveraging Go channels for synchronization to prevent potential security vulnerabilities associated with improper lock handling.
 
-### 1.2. Security
+### 1.2. Security by default:
 - [ ] **1.2.1. Implement Basic Encryption**: Integrate fundamental encryption methods to secure data transmission, aiming for secure communication by default.
 - [ ] **1.2.2. Develop Secure Key Exchange Mechanism**: Establish a secure process for key exchange to authenticate parties involved in the communication.
 

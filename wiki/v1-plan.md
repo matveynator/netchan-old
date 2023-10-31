@@ -1,60 +1,49 @@
-# Library Development Plan for `netchan` in Go
+Development Roadmap for the "netchan" Library in Golang
+Feel free to contribute your ideas and suggestions!
 
 ## General Goals and Principles
-1. **Ease of Use**: The library's interface should be intuitively designed, reflecting the standard channel operations in Go for seamless user integration.
-2. **Secure by Default**: The library must employ cutting-edge encryption techniques, alongside robust authentication and authorization practices.
-3. **Scalability**: Designed with distributed systems in mind, ensuring high throughput and scalability.
-4. **High Performance**: Optimized for low overhead and swift data transmissions, performance is a top priority.
-5. **Network Adherence to CSP Principles**: Full alignment with the Communicating Sequential Processes (CSP) model, extending its principles to the network layer.
-6. **Principles of Pure Go Programming**: Adherence to esteemed Go programming conventions, ensuring coding practices are in harmony with the language’s philosophy.
+1. **Ease of Use**: The library’s interface should be intuitively understandable and reflect standard channel operations in Go.
+2. **Secure by Default**: The library should employ modern encryption techniques, as well as reliable practices for authentication and authorization.
+3. **Scalability**: Suitable for distributed systems, providing high throughput and scalability.
+4. **High Performance**: Optimized to ensure low overhead and rapid data transfer.
+5. **Network Adherence to CSP Principles**: Full compliance with the Communicating Sequential Processes (CSP) model.
+6. **Principles of Pure Go Programming**: Adherence to the principles of pure Go programming.
 
 ## Package Structure
 1. **Network Interaction Functions**
-   - `ListenAndServe`: To handle incoming connections.
-   - `Dial`: To initiate outgoing connections.
-   - Both methods should utilize interfaces to facilitate future modifications and functional enhancements.
+   - `ListenAndServe`: Handling incoming connections.
+   - `Dial`: Initiating outgoing connections.
+   - Both methods should utilize interfaces to facilitate future modifications and enhance functionality.
+   - Implementation of a mechanism for file descriptor transmission to ensure graceful restart without losing current connections.
 
 2. **Connection Management**
    - Automatic tracking of connected and disconnected clients.
-   - Connection recovery in case of disconnection.
-   - Client identification capabilities.
+   - Re-establishing connections in case of loss.
+   - Identifying clients and corresponding channels using unique and secure keys.
 
 3. **Buffer and Broadcast**
-   - Implementing a network-level analogue to Go’s channel buffers.
-   - Broadcasting mechanism for copying initial assignments to all clients.
-   - A "first-come, first-served" system for task retrieval.
+   - Implementing a network-level equivalent of Go’s channel buffer.
+   - A handshake-broadcast mechanism to distribute initial tasks to all clients, with only those who respond first receiving tasks according to the queue size (buffer).
+   - A “first come, first served” system to determine who receives a task.
 
 4. **Channels and Encryption**
-   - Initialization functions return a channel through which available channels are transmitted for servicing via `select`.
-   - Employing unique encryption keys for each channel.
-   - All network channels are encrypted by default.
+   - Initialization functions return a channel through which serviced channels are subsequently transmitted and received.
+   - Using unique keys for each channel.
+   - All network channels utilize maximum TLS encryption by default.
+   - Optionally using shared encryption keys, blocking connection to the port in their absence.
 
-5. **Encryption Key Storage**
-   - Encryption keys used for server connection are stored inside the binary file.
-   - Utilizing obfuscation and segmentation of keys, as well as the `go:embed` format, to prevent decompilation from binary code.
+5. **Storing Shared Encryption Keys**
+   - Encryption keys, used for connecting to the server, are stored inside the binary file.
+   - Utilizing obfuscation and key splitting, as well as the `go:embed` format, to prevent decompilation from binary code.
 
 ## Implementation
 1. **Interfaces and Abstractions**: 
-   - Defining interfaces for network operations, enabling easy expansion and modification of functionality.
+   - Defining interfaces for network operations, allowing for easy expansion and modification of functionality.
 
 2. **Security and Encryption**: 
-   - Integration with modern encryption and security libraries.
-   - Implementation of authentication and authorization mechanisms.
+   - Integrating modern encryption and security libraries.
+   - Implementing authentication and authorization mechanisms.
 
 3. **State Management and Error Handling**: 
-   - Monitoring connection states and handling errors.
-   - Automatic recovery from connection losses.
-
-4. **Performance and Optimization**: 
-   - Profiling and optimizing code to reduce overhead and accelerate data transmission.
-
-5. **Documentation and Examples**: 
-   - Providing comprehensive documentation for each function and library component.
-   - Offering examples of usage for various scenarios.
-
-6. **Testing and Validation**: 
-   - Developing an extensive test suite to verify the library’s functionality.
-   - Validating security and performance.
-
-## Conclusion
-By following this plan, `netchan` is poised to become a robust and flexible network interaction library in Go, ensuring high performance, security, and ease of use while adhering to the revered principles of pure Go programming.
+   - Monitoring connection status and managing errors.
+   - Automatically recovering after connection loss.

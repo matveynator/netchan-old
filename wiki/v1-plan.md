@@ -47,3 +47,14 @@ Feel free to contribute your ideas and suggestions!
 3. **State Management and Error Handling**: 
    - Monitoring connection status and managing errors.
    - Automatically recovering after connection loss.
+
+
+>
+> Here is a preliminary outline of the plan that I have prepared. I would be grateful if you could take the time to review it and enrich it with your suggestions, should it pique your interest.
+>
+> Looking ahead, I am considering the possibility of integrating drivers for proxy protocols, which would allow us to provide our longstanding protocols like SMTP/MQTT/gRPC/HTTP with access to the latest netchan data.
+>
+> Additionally, I am experiencing certain difficulties in understanding how to ensure the security of keys and optimize the client signing process at the time of compilation.
+>
+> Kind regards, 
+> Matvey Gladkikh

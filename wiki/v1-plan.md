@@ -1,25 +1,60 @@
----
+# Library Development Plan for `netchan` in Go
 
-# Project Tasks for netchan: Version 1.0
+## General Goals and Principles
+1. **Ease of Use**: The library's interface should be intuitively designed, reflecting the standard channel operations in Go for seamless user integration.
+2. **Secure by Default**: The library must employ cutting-edge encryption techniques, alongside robust authentication and authorization practices.
+3. **Scalability**: Designed with distributed systems in mind, ensuring high throughput and scalability.
+4. **High Performance**: Optimized for low overhead and swift data transmissions, performance is a top priority.
+5. **Network Adherence to CSP Principles**: Full alignment with the Communicating Sequential Processes (CSP) model, extending its principles to the network layer.
+6. **Principles of Pure Go Programming**: Adherence to esteemed Go programming conventions, ensuring coding practices are in harmony with the language’s philosophy.
 
-## Overview
-This document delineates the critical tasks and objectives for the first release of the `netchan` library, aiming to provide a secure, efficient, and user-friendly experience for Go developers working with network channels.
+## Package Structure
+1. **Network Interaction Functions**
+   - `ListenAndServe`: To handle incoming connections.
+   - `Dial`: To initiate outgoing connections.
+   - Both methods should utilize interfaces to facilitate future modifications and functional enhancements.
 
-## 1. Core Development:
-### 1.1. Network Channel Abstractions
-- [ ] **1.1.1. Design Basic Secure Network Channel Abstractions**: Develop the essential abstractions that closely resemble Go’s native channels for network communication, ensuring inherent security.
-- [ ] **1.1.2. Ensure Thread Safety without Mutex Locks**: Guarantee thread safety, leveraging Go channels for synchronization to prevent potential security vulnerabilities associated with improper lock handling.
+2. **Connection Management**
+   - Automatic tracking of connected and disconnected clients.
+   - Connection recovery in case of disconnection.
+   - Client identification capabilities.
 
-### 1.2. Security by default:
-- [ ] **1.2.1. Implement Basic Encryption**: Integrate fundamental encryption methods to secure data transmission, aiming for secure communication by default.
-- [ ] **1.2.2. Develop Secure Key Exchange Mechanism**: Establish a secure process for key exchange to authenticate parties involved in the communication.
+3. **Buffer and Broadcast**
+   - Implementing a network-level analogue to Go’s channel buffers.
+   - Broadcasting mechanism for copying initial assignments to all clients.
+   - A "first-come, first-served" system for task retrieval.
 
-## 2. Documentation
-- [ ] **2.1. Offer Simple Usage Examples**: Supply basic examples demonstrating the library’s usage in common scenarios.
+4. **Channels and Encryption**
+   - Initialization functions return a channel through which available channels are transmitted for servicing via `select`.
+   - Employing unique encryption keys for each channel.
+   - All network channels are encrypted by default.
 
-## 3. Testing
-- [ ] **3.1. Conduct Basic Unit Testing**: Develop a suite of unit tests to validate the library’s core functionalities.
-- [ ] **3.2. Implement Basic Security Tests**: Integrate specific tests to ensure the security of key operations.
+5. **Encryption Key Storage**
+   - Encryption keys used for server connection are stored inside the binary file.
+   - Utilizing obfuscation and segmentation of keys, as well as the `go:embed` format, to prevent decompilation from binary code.
 
-## 4. Community Engagement
-- [ ] **4.1. Establish Basic Contribution Guidelines**: Create simple and clear guidelines for developers interested in contributing to `netchan`.
+## Implementation
+1. **Interfaces and Abstractions**: 
+   - Defining interfaces for network operations, enabling easy expansion and modification of functionality.
+
+2. **Security and Encryption**: 
+   - Integration with modern encryption and security libraries.
+   - Implementation of authentication and authorization mechanisms.
+
+3. **State Management and Error Handling**: 
+   - Monitoring connection states and handling errors.
+   - Automatic recovery from connection losses.
+
+4. **Performance and Optimization**: 
+   - Profiling and optimizing code to reduce overhead and accelerate data transmission.
+
+5. **Documentation and Examples**: 
+   - Providing comprehensive documentation for each function and library component.
+   - Offering examples of usage for various scenarios.
+
+6. **Testing and Validation**: 
+   - Developing an extensive test suite to verify the library’s functionality.
+   - Validating security and performance.
+
+## Conclusion
+By following this plan, `netchan` is poised to become a robust and flexible network interaction library in Go, ensuring high performance, security, and ease of use while adhering to the revered principles of pure Go programming.

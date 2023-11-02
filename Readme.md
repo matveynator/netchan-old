@@ -1,4 +1,4 @@
-# Welcome to the netchan Wiki!
+# Welcome to the netchan-old Wiki!
 
 <p align="right">
     <img align="right" property="og:image" src="https://repository-images.githubusercontent.com/710838463/86ad7361-2608-4a70-9197-e66883eb9914" width="30%">
@@ -6,7 +6,7 @@
 
 
 ## Overview
-`netchan` stands as a robust library for the Go programming language, offering convenient and secure abstractions for network channel interactions. Inspired by Rob Pike’s initial concept, it aims to deliver an interface that resonates with the simplicity and familiarity of Go’s native channels.
+`netchan-old` stands as a robust library for the Go programming language, offering convenient and secure abstractions for network channel interactions. Inspired by Rob Pike’s initial concept, it aims to deliver an interface that resonates with the simplicity and familiarity of Go’s native channels.
 
 ## Key Features
 - **Ease of Use**: The library’s interface is intuitively designed, mirroring the standard channel operations in Go, ensuring a seamless integration for Go developers.

@@ -1,6 +1,6 @@
 # Welcome to the netchan-old Wiki!
  
-repository status:frozen
+The status of this repository has been set to frozen. All new developments can be found at the following location: [netchan repository](https://github.com/matveynator/netchan).
 
 ## Overview
 `netchan-old` stands as a robust library for the Go programming language, offering convenient and secure abstractions for network channel interactions. Inspired by Rob Pike’s initial concept, it aims to deliver an interface that resonates with the simplicity and familiarity of Go’s native channels.

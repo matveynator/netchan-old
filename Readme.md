@@ -1,5 +1,3 @@
-# Welcome to the netchan-old Wiki!
- 
 The status of this repository has been set to frozen. All new developments can be found at the following location: [netchan repository](https://github.com/matveynator/netchan).
 
 ## Overview

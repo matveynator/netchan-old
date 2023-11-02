@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/matveynator/netchan"
+	"github.com/matveynator/netchan-old"
 	"log"
 	"net"
 )

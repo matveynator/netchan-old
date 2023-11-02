@@ -20,7 +20,7 @@
 ## Getting Started
 To embark on your journey with `netchan`, install the library using `go get`:
 ```
-go get -u github.com/matveynator/netchan
+go get -u github.com/matveynator/netchan-old
 ```
 ## Usage Example:
 
@@ -29,7 +29,7 @@ go get -u github.com/matveynator/netchan
 package main
 
 import (
-	"github.com/matveynator/netchan"
+	"github.com/matveynator/netchan-old"
 	"log"
 	"net"
 	"time"
@@ -99,7 +99,7 @@ func pingHandler(pingChannel chan string, pongChannel chan string) {
 package main
 
 import (
-	"github.com/matveynator/netchan"
+	"github.com/matveynator/netchan-old"
 	"log"
 	"net"
 )
@@ -156,10 +156,10 @@ func pongHandler(pongChannel chan string, pingChannel chan string) {
 - Secure by default
 
 ## Community and Support
-Should you have inquiries or suggestions, feel free to open an [issue](https://github.com/matveynator/netchan/issues) in our GitHub repository.
+Should you have inquiries or suggestions, feel free to open an [issue](https://github.com/matveynator/netchan-old/issues) in our GitHub repository.
 
 ## License
-`netchan` is distributed under the BSD-style License. For detailed information, please refer to the [LICENSE](https://github.com/matveynator/netchan/blob/master/LICENSE) file.
+`netchan` is distributed under the BSD-style License. For detailed information, please refer to the [LICENSE](https://github.com/matveynator/netchan-old/blob/master/LICENSE) file.
 
 ## Recovering original netchan 2013 code by Rob Pike:
 ```

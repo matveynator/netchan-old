@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/matveynator/netchan" // Import the netchan package
+	"github.com/matveynator/netchan-old" // Import the netchan package
 	"net"
 	"time"
 )
